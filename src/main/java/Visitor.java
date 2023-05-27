@@ -1,5 +1,5 @@
 public interface Visitor {
     String exibirSeguroPredial(SeguroPredial predial);
-    String exibirSeguroComercial(SeguroComercio comercio);
+    String exibirSeguroComercial(SeguroComecial comercio);
     String exibirSeguroResidencial(SeguroResidencial residencia);
 }

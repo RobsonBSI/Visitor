@@ -1,10 +1,10 @@
-public class SeguroComercio implements Seguro {
+public class SeguroComecial implements Seguro {
     private int codigo;
     private String nomeComercio ;
     private String cnpj ;
     private float valorSeguro;
 
-    public SeguroComercio(int codigo, String nomeComercio, String cnpj, float valorSeguro) {
+    public SeguroComecial(int codigo, String nomeComercio, String cnpj, float valorSeguro) {
         this.codigo = codigo;
         this.nomeComercio = nomeComercio;
         this.cnpj = cnpj;
