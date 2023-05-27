@@ -6,29 +6,29 @@ public class Seguradora implements Visitor {
     public String exibirSeguroPredial(SeguroPredial predial) {
         return "Seguro Predial{" +
                 "contrato=" + predial.getCodigo() +
-                "Nome do predio=" + predial.getNomePredio() +
-                ", Numero de Apartamentos='" + predial.getNumeroApartamento()+ '\'' +
+                ", Nome do predio=" + predial.getNomePredio() +
+                ", Numero de Apartamentos=" + predial.getNumeroApartamento() +
                 ", valor=" + predial.getValorSeguro() +
                 '}';
     }
 
     @Override
     public String exibirSeguroComercial(SeguroComercio comercio) {
-        return "Seguro Predial{" +
+        return "Seguro Comercial{" +
                 "contrato=" + comercio.getCodigo() +
-                "Comercio=" +comercio.getNomeComercio() +
-                ",CNPJ='" +comercio.getCnpj()+ '\'' +
-                ",valor=" + comercio.getValorSeguro() +
+                ", Comercio=" +comercio.getNomeComercio() +
+                ", CNPJ='" +comercio.getCnpj()+ '\'' +
+                ", valor=" + comercio.getValorSeguro() +
                 '}';
     }
 
     @Override
     public String exibirSeguroResidencial(SeguroResidencial residencia) {
-        return "Seguro Predial{" +
+        return "Seguro Residencial{" +
                 "contrato=" + residencia.getCodigo() +
-                "Comercio=" +residencia.getNome() +
-                ",CNPJ='" +residencia.getCpf()+ '\'' +
-                ",valor=" + residencia.getValorSeguro() +
+                ", Nome=" +residencia.getNome() +
+                ", CPF='" +residencia.getCpf()+ '\'' +
+                ", valor=" + residencia.getValorSeguro() +
                 '}';
     }
 }
